@@ -1,0 +1,11 @@
+name = "ghostsky"
+main = "worker/index.js"
+compatibility_date = "2026-01-01"
+
+[assets]
+directory = "./web-build"
+binding = "ASSETS"
+# Workers-native equivalent of what _redirects was trying to do for Pages —
+# any path that doesn't match a real file falls back to index.html so
+# client-side routing (profiles, posts, etc.) works instead of 404ing.
+not_found_handling = "single-page-application"
