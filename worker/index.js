@@ -27,6 +27,26 @@ const BOT_UA_PATTERNS = [
   'bot',
 ]
 
+// In-memory rate limiter — limits per IP within a single Worker instance.
+// Workers are stateless and multi-instance, so this won't stop a fully
+// distributed attack, but it will catch a single abusive crawler effectively.
+const RATE_LIMIT_WINDOW_MS = 10_000 // 10 seconds
+const RATE_LIMIT_MAX = 60            // max requests per IP per window
+const rateLimitMap = new Map()
+
+function isRateLimited(ip) {
+  if (!ip) return false
+  const now = Date.now()
+  const entry = rateLimitMap.get(ip)
+  if (!entry || now - entry.windowStart > RATE_LIMIT_WINDOW_MS) {
+    rateLimitMap.set(ip, {windowStart: now, count: 1})
+    return false
+  }
+  entry.count++
+  if (entry.count > RATE_LIMIT_MAX) return true
+  return false
+}
+
 function isBot(ua) {
   if (!ua) return false
   const lower = ua.toLowerCase()
@@ -145,6 +165,20 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url)
     const ua = request.headers.get('user-agent') || ''
+    const ip = request.headers.get('cf-connecting-ip') || ''
+
+    // Rate limit bot traffic on profile/post paths
+    if (isBot(ua) && (url.pathname.startsWith('/profile/') || url.pathname === '/oembed')) {
+      if (isRateLimited(ip)) {
+        return new Response('Too Many Requests', {
+          status: 429,
+          headers: {
+            'retry-after': '10',
+            'x-content-type-options': 'nosniff',
+          },
+        })
+      }
+    }
 
     // oEmbed endpoint — used by Discord/Slack to show provider name + icon
     if (url.pathname === '/oembed') {
