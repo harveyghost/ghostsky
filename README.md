@@ -28,7 +28,7 @@ The Authenticated Transfer Protocol ("AT Protocol" or "atproto") is a decentrali
 ## Deployment
 
 ```bash
-pnpm deploy-ghostsky
+pnpm deploy-ghost
 ```
 
 Ghostsky is deployed as a Cloudflare Worker. See `wrangler.toml` for configuration.
