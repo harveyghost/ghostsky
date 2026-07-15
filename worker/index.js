@@ -80,7 +80,10 @@ function ogResponse(html) {
     headers: {
       'content-type': 'text/html;charset=UTF-8',
       'cache-control': 'public, max-age=300',
-      vary: 'User-Agent',
+      'vary': 'User-Agent',
+      'x-content-type-options': 'nosniff',
+      'x-frame-options': 'SAMEORIGIN',
+      'referrer-policy': 'strict-origin-when-cross-origin',
     },
   })
 }
@@ -88,6 +91,7 @@ function ogResponse(html) {
 async function handlePost(handle, rkey, requestUrl) {
   const profileRes = await fetch(
     `https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=${encodeURIComponent(handle)}`,
+    {signal: AbortSignal.timeout(5000)},
   )
   if (!profileRes.ok) return null
   const profile = await profileRes.json()
@@ -95,6 +99,7 @@ async function handlePost(handle, rkey, requestUrl) {
   const postUri = `at://${profile.did}/app.bsky.feed.post/${rkey}`
   const postRes = await fetch(
     `https://public.api.bsky.app/xrpc/app.bsky.feed.getPostThread?uri=${encodeURIComponent(postUri)}&depth=0`,
+    {signal: AbortSignal.timeout(5000)},
   )
   if (!postRes.ok) return null
   const threadData = await postRes.json()
@@ -122,6 +127,7 @@ async function handlePost(handle, rkey, requestUrl) {
 async function handleProfile(handle, requestUrl) {
   const profileRes = await fetch(
     `https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=${encodeURIComponent(handle)}`,
+    {signal: AbortSignal.timeout(5000)},
   )
   if (!profileRes.ok) return null
   const profile = await profileRes.json()
@@ -136,7 +142,7 @@ async function handleProfile(handle, requestUrl) {
 }
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url)
     const ua = request.headers.get('user-agent') || ''
 
@@ -187,6 +193,7 @@ export default {
           'content-type': 'application/json',
           'cache-control': 'public, max-age=300',
           'access-control-allow-origin': '*',
+          'x-content-type-options': 'nosniff',
         },
       })
     }
@@ -197,20 +204,27 @@ export default {
       // /profile/{handle}
       const profileMatch = url.pathname.match(/^\/profile\/([^/]+)\/?$/)
 
-      try {
-        if (postMatch) {
-          const html = await handlePost(postMatch[1], postMatch[2], request.url)
+      if (postMatch || profileMatch) {
+        // Synthetic cache key — never collides with real asset URLs, so a
+        // cached OG page can never be served to a human and vice versa.
+        const cacheKey = new Request(
+          `${url.origin}${url.pathname}?__og_bot=1`,
+        )
+        const cached = await caches.default.match(cacheKey)
+        if (cached) return cached
+
+        try {
+          const html = postMatch
+            ? await handlePost(postMatch[1], postMatch[2], request.url)
+            : await handleProfile(profileMatch[1], request.url)
           if (html) {
-            return ogResponse(html)
+            const response = ogResponse(html)
+            ctx.waitUntil(caches.default.put(cacheKey, response.clone()))
+            return response
           }
-        } else if (profileMatch) {
-          const html = await handleProfile(profileMatch[1], request.url)
-          if (html) {
-            return ogResponse(html)
-          }
+        } catch (e) {
+          // fall through to static assets on any error — never break the real site
         }
-      } catch (e) {
-        // fall through to static assets on any error — never break the real site
       }
     }
 
