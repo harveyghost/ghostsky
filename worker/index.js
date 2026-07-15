@@ -41,6 +41,7 @@ function esc(str) {
 }
 
 function ogPage({title, description, image, url, type, publishedTime}) {
+  const oembedUrl = `https://ghostsky.app/oembed?url=${encodeURIComponent(url)}&format=json`
   return `<!DOCTYPE html>
 <html>
 <head>
@@ -48,6 +49,7 @@ function ogPage({title, description, image, url, type, publishedTime}) {
 <title>${esc(title)}</title>
 <link rel="canonical" href="${esc(url)}">
 <link rel="icon" href="https://ghostsky.app/favicon.png">
+<link rel="alternate" type="application/json+oembed" href="${esc(oembedUrl)}" title="${esc(title)}">
 <meta name="theme-color" content="#8B7FD6">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
@@ -137,6 +139,57 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url)
     const ua = request.headers.get('user-agent') || ''
+
+    // oEmbed endpoint — used by Discord/Slack to show provider name + icon
+    if (url.pathname === '/oembed') {
+      const targetUrl = url.searchParams.get('url') || ''
+      const postMatch = targetUrl.match(/\/profile\/([^/]+)\/post\/([^/]+)/)
+      const profileMatch = targetUrl.match(/\/profile\/([^/]+)/)
+
+      let authorName = 'Ghostsky'
+      let authorUrl = 'https://ghostsky.app'
+
+      try {
+        if (postMatch) {
+          const profileRes = await fetch(
+            `https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=${encodeURIComponent(postMatch[1])}`,
+          )
+          if (profileRes.ok) {
+            const profile = await profileRes.json()
+            authorName = `${profile.displayName || profile.handle} (@${profile.handle})`
+            authorUrl = `https://ghostsky.app/profile/${profile.handle}`
+          }
+        } else if (profileMatch) {
+          const profileRes = await fetch(
+            `https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=${encodeURIComponent(profileMatch[1])}`,
+          )
+          if (profileRes.ok) {
+            const profile = await profileRes.json()
+            authorName = `${profile.displayName || profile.handle} (@${profile.handle})`
+            authorUrl = `https://ghostsky.app/profile/${profile.handle}`
+          }
+        }
+      } catch (e) {
+        // fall through with defaults
+      }
+
+      const oembed = {
+        type: 'rich',
+        version: '1.0',
+        provider_name: 'Ghostsky',
+        provider_url: 'https://ghostsky.app',
+        author_name: authorName,
+        author_url: authorUrl,
+      }
+
+      return new Response(JSON.stringify(oembed), {
+        headers: {
+          'content-type': 'application/json',
+          'cache-control': 'public, max-age=300',
+          'access-control-allow-origin': '*',
+        },
+      })
+    }
 
     if (isBot(ua)) {
       // /profile/{handle}/post/{rkey}
