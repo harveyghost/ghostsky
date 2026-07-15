@@ -4,6 +4,8 @@ This is a soft fork of [social app](https://github.com/bluesky-social/social-app
 
 **Web: [ghostsky.app](https://ghostsky.app)**
 
+Made with assistance from Claude
+
 ## Changes from Upstream
 
 - Custom ghost branding and logo
