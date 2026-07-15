@@ -13,7 +13,7 @@ Made with assistance from Claude
 - Disabled telemetry and analytics (GrowthBook, MetricsClient, Sentry)
 - Age assurance bypass
 - App password warning on login — prompts users to use an app password instead of their main account password
-- Deployed via Cloudflare Workers (`pnpm deploy-ghostsky`)
+- Deployed via Cloudflare Workers (`pnpm deploy-ghost`)
 
 ## Development Resources
 
