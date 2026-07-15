@@ -12,7 +12,7 @@ export const BSKY_SERVICE_DID = 'did:web:bsky.social'
 export const PUBLIC_BSKY_SERVICE = 'https://public.api.bsky.app'
 export const DEFAULT_SERVICE = BSKY_SERVICE
 // GHOST: was Bluesky's real Zendesk support portal (blueskyweb.zendesk.com)
-export const HELP_DESK_URL = `/help.html`
+export const HELP_DESK_URL = 'https://github.com/harveyghost/ghostsky/issues'
 export const CHAT_SERVICE = 'https://api.bsky.chat'
 export const EMBED_SERVICE = 'https://embed.bsky.app'
 export const EMBED_SCRIPT = `${EMBED_SERVICE}/static/embed.js`
@@ -45,7 +45,7 @@ export function FEEDBACK_FORM_URL(_args: {
   email?: string
   handle?: string
 }): string {
-  return '/feedback.html'
+  return 'https://github.com/harveyghost/ghostsky/issues/new'
 }
 
 export const MAX_DISPLAY_NAME = 64
