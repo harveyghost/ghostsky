@@ -131,15 +131,14 @@ async function handlePost(handle, rkey, requestUrl) {
   const image =
     (post.embed && post.embed.images && post.embed.images[0] && post.embed.images[0].fullsize) ||
     (post.embed && post.embed.media && post.embed.media.images && post.embed.media.images[0] && post.embed.media.images[0].fullsize) ||
-    profile.avatar ||
     ''
 
   return ogPage({
     title: `${authorName} (@${profile.handle})`,
-    description: text.slice(0, 200),
+    description: text.slice(0, 300),
     image,
     url: requestUrl,
-    type: 'article',
+    type: 'link',
     publishedTime: (post.record && post.record.createdAt) || '',
   })
 }
