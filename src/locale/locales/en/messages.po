@@ -190,11 +190,6 @@ msgstr ""
 msgid "{0, plural, one {post} other {posts}}"
 msgstr ""
 
-#. Number of users (always at least 25) who have joined Bluesky using a specific starter pack
-#: src/screens/StarterPack/StarterPackScreen.tsx:504
-#~ msgid "{0, plural, other {# people have}} joined Bluesky via this starter pack!"
-#~ msgstr ""
-
 #. Number of users (always at least 25) who have joined Ghostsky using a specific starter pack
 #. placeholder {0}: starterPack.joinedAllTimeCount || 0
 #: src/screens/StarterPack/StarterPackScreen.tsx:504
@@ -726,14 +721,6 @@ msgid "{numMatches, plural, one {# contact found} other {# contacts found}}"
 msgstr ""
 
 #: src/components/NewskieDialog.tsx:115
-#~ msgid "{profileName} joined Bluesky {timeAgoString} ago"
-#~ msgstr ""
-
-#: src/components/NewskieDialog.tsx:112
-#~ msgid "{profileName} joined Bluesky using a starter pack {timeAgoString} ago"
-#~ msgstr ""
-
-#: src/components/NewskieDialog.tsx:115
 msgid "{profileName} joined Ghostsky {timeAgoString} ago"
 msgstr "{profileName} joined Ghostsky {timeAgoString} ago"
 
@@ -878,11 +865,6 @@ msgstr "<0>{displayName}</0><1/><2> added you</2>"
 
 #: src/screens/Hashtag.tsx:226
 #: src/screens/Search/SearchResults.tsx:432
-#~ msgid "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Bluesky.</4>"
-#~ msgstr ""
-
-#: src/screens/Hashtag.tsx:226
-#: src/screens/Search/SearchResults.tsx:432
 msgid "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Ghostsky.</4>"
 msgstr "<0>Sign in</0><1> or </1><2>create an account</2><3> </3><4>to search for news, sports, politics, and everything else happening on Ghostsky.</4>"
 
@@ -906,7 +888,7 @@ msgstr ""
 msgid "24 hours"
 msgstr ""
 
-#: src/screens/Login/LoginForm.tsx:469
+#: src/screens/Login/LoginForm.tsx:476
 msgid "2FA Confirmation"
 msgstr ""
 
@@ -921,10 +903,6 @@ msgstr ""
 #: src/components/dialogs/MutedWords.tsx:561
 msgid "7 days"
 msgstr ""
-
-#: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:17
-#~ msgid "A collection of popular feeds you can find on Bluesky, including News, Booksky, Game Dev, Blacksky, and Fountain Pens"
-#~ msgstr ""
 
 #: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:17
 msgid "A collection of popular feeds you can find on Ghostsky, including News, Booksky, Game Dev, Blacksky, and Fountain Pens"
@@ -965,11 +943,6 @@ msgstr "A reply to a message sent before you joined"
 
 #. Contains a post that originally appeared in English. Consider translating the post text if it makes sense in your language, and noting that the post was translated from English.
 #: src/components/dialogs/nuxs/LiveNowBetaDialog.tsx:147
-#~ msgid "A screenshot of a post from @esb.lol, showing the user is currently livestreaming content on Twitch. The post reads: \"Hello! I'm live on Twitch, and I'm testing Bluesky's latest feature too!\""
-#~ msgstr ""
-
-#. Contains a post that originally appeared in English. Consider translating the post text if it makes sense in your language, and noting that the post was translated from English.
-#: src/components/dialogs/nuxs/LiveNowBetaDialog.tsx:147
 msgid "A screenshot of a post from @esb.lol, showing the user is currently livestreaming content on Twitch. The post reads: \"Hello! I'm live on Twitch, and I'm testing Ghostsky's latest feature too!\""
 msgstr "A screenshot of a post from @esb.lol, showing the user is currently livestreaming content on Twitch. The post reads: \"Hello! I'm live on Twitch, and I'm testing Ghostsky's latest feature too!\""
 
@@ -981,11 +954,6 @@ msgstr ""
 #: src/components/dialogs/nuxs/ActivitySubscriptions.tsx:114
 msgid "A screenshot of a profile page with a bell icon next to the follow button, indicating the new activity notifications feature."
 msgstr ""
-
-#. Contains a post that originally appeared in English. Consider translating the post text if it makes sense in your language, and noting that the post was translated from English.
-#: src/components/dialogs/nuxs/DraftsAnnouncement.tsx:98
-#~ msgid "A screenshot of the post composer with a new button next to the post button that says \"Drafts\", with a rainbow firework effect. Below, the text in the composer reads \"Hey, did you hear the news? Bluesky has drafts now!!!\"."
-#~ msgstr ""
 
 #. Contains a post that originally appeared in English. Consider translating the post text if it makes sense in your language, and noting that the post was translated from English.
 #: src/components/dialogs/nuxs/DraftsAnnouncement.tsx:98
@@ -1118,10 +1086,6 @@ msgstr ""
 msgctxt "toast"
 msgid "Account unmuted"
 msgstr ""
-
-#: src/components/verification/VerifierDialog.tsx:100
-#~ msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Bluesky."
-#~ msgstr ""
 
 #: src/components/verification/VerifierDialog.tsx:100
 msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Ghostsky."
@@ -1650,34 +1614,16 @@ msgstr ""
 
 #: src/components/contacts/components/HeroImage.tsx:28
 #: src/components/dialogs/nuxs/FindContactsAnnouncement.tsx:79
-#~ msgid "An illustration depicting user avatars flowing from a contact book into the Bluesky app"
-#~ msgstr ""
-
-#: src/components/contacts/components/HeroImage.tsx:28
-#: src/components/dialogs/nuxs/FindContactsAnnouncement.tsx:79
 msgid "An illustration depicting user avatars flowing from a contact book into the Ghostsky app"
 msgstr "An illustration depicting user avatars flowing from a contact book into the Ghostsky app"
-
-#: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:35
-#~ msgid "An illustration of several Bluesky posts alongside repost, like, and comment icons"
-#~ msgstr ""
 
 #: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:35
 msgid "An illustration of several Ghostsky posts alongside repost, like, and comment icons"
 msgstr "An illustration of several Ghostsky posts alongside repost, like, and comment icons"
 
 #: src/components/dialogs/nuxs/InviteFriendsAnnouncement.tsx:111
-#~ msgid "An illustration of the Bluesky app with a paper airplane flying out of it, representing inviting friends"
-#~ msgstr "An illustration of the Bluesky app with a paper airplane flying out of it, representing inviting friends"
-
-#: src/components/dialogs/nuxs/InviteFriendsAnnouncement.tsx:111
 msgid "An illustration of the Ghostsky app with a paper airplane flying out of it, representing inviting friends"
 msgstr "An illustration of the Ghostsky app with a paper airplane flying out of it, representing inviting friends"
-
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:86
-#: src/components/verification/VerifierDialog.tsx:88
-#~ msgid "An illustration showing that Bluesky selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
-#~ msgstr ""
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:86
 #: src/components/verification/VerifierDialog.tsx:88
@@ -1714,10 +1660,6 @@ msgid "An issue occurred, please try again."
 msgstr ""
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:121
-#~ msgid "An mockup of a iPhone showing the Bluesky app open to the profile of a verified user with a blue checkmark next to their display name."
-#~ msgstr ""
-
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:121
 msgid "An mockup of a iPhone showing the Ghostsky app open to the profile of a verified user with a blue checkmark next to their display name."
 msgstr "An mockup of a iPhone showing the Ghostsky app open to the profile of a verified user with a blue checkmark next to their display name."
 
@@ -1749,10 +1691,6 @@ msgstr ""
 #: src/components/PolicyUpdateOverlay/Badge.tsx:33
 msgid "Announcement"
 msgstr ""
-
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:39
-#~ msgid "Announcing verification on Bluesky"
-#~ msgstr ""
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:39
 msgid "Announcing verification on Ghostsky"
@@ -2052,8 +1990,8 @@ msgstr ""
 #: src/screens/Login/ChooseAccountForm.tsx:100
 #: src/screens/Login/ForgotPasswordForm.tsx:119
 #: src/screens/Login/ForgotPasswordForm.tsx:124
-#: src/screens/Login/LoginForm.tsx:544
-#: src/screens/Login/LoginForm.tsx:549
+#: src/screens/Login/LoginForm.tsx:551
+#: src/screens/Login/LoginForm.tsx:556
 #: src/screens/Login/SetNewPasswordForm.tsx:157
 #: src/screens/Login/SetNewPasswordForm.tsx:163
 #: src/screens/Messages/components/ChatDisabled.tsx:164
@@ -2275,81 +2213,6 @@ msgstr ""
 #: src/screens/Search/components/AdvancedSearchDialog/hooks.tsx:17
 msgid "bloomscrolling booksky"
 msgstr "bloomscrolling booksky"
-
-#: src/components/dialogs/ServerInput.tsx:144
-#: src/components/dialogs/ServerInput.tsx:146
-#~ msgid "Bluesky"
-#~ msgstr ""
-
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:657
-#~ msgid "Bluesky cannot confirm the authenticity of the claimed date."
-#~ msgstr ""
-
-#: src/screens/Settings/AppIconSettings/useAppIconSets.ts:165
-#~ msgctxt "Name of app icon variant"
-#~ msgid "Bluesky Classic™"
-#~ msgstr ""
-
-#: src/components/contacts/screens/GetContacts.tsx:235
-#~ msgid "Bluesky helps friends find each other by creating an encoded digital fingerprint, called a \"hash\", and then looking for matching hashes."
-#~ msgstr ""
-
-#: src/components/dialogs/ServerInput.tsx:214
-#: src/screens/Login/components/HostingProviderDialog.tsx:236
-#~ msgid "Bluesky is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
-#~ msgstr ""
-
-#: src/components/dialogs/ServerInput.tsx:162
-#~ msgid "Bluesky is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Bluesky Social option."
-#~ msgstr ""
-
-#: src/components/ProgressGuide/List.tsx:117
-#~ msgid "Bluesky is better with friends!"
-#~ msgstr ""
-
-#: src/screens/Onboarding/StepFindContactsIntro/index.tsx:43
-#~ msgid "Bluesky is more fun with friends"
-#~ msgstr ""
-
-#: src/components/dialogs/nuxs/FindContactsAnnouncement.tsx:108
-#~ msgid "Bluesky is more fun with friends! Import your contacts to see who’s already here."
-#~ msgstr ""
-
-#: src/components/contacts/screens/ViewMatches.tsx:315
-#~ msgid "Bluesky is more fun with friends. Do you want to invite some of yours? <0/>"
-#~ msgstr ""
-
-#: src/features/inviteFriends/InviteScannerScreen.tsx:105
-#~ msgid "Bluesky needs camera access to scan QR codes from other profiles."
-#~ msgstr "Bluesky needs camera access to scan QR codes from other profiles."
-
-#: src/screens/Takendown.tsx:213
-#~ msgid "Bluesky Social Terms of Service"
-#~ msgstr ""
-
-#: src/screens/Settings/FindContactsSettings.tsx:570
-#~ msgid "Bluesky stores your contacts as encoded data. Removing your contacts will immediately delete this data."
-#~ msgstr ""
-
-#: src/components/StarterPack/ProfileStarterPacks.tsx:340
-#~ msgid "Bluesky will choose a set of recommended accounts from people in your network."
-#~ msgstr ""
-
-#: src/screens/Settings/components/PwiOptOut.tsx:100
-#~ msgid "Bluesky will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
-#~ msgstr ""
-
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:136
-#~ msgid "Bluesky will proactively verify notable and authentic accounts."
-#~ msgstr ""
-
-#: src/screens/Settings/AppIconSettings/index.tsx:97
-#~ msgid "Bluesky+"
-#~ msgstr ""
-
-#: src/screens/Settings/AppIconSettings/index.tsx:100
-#~ msgid "Bluesky+ icons"
-#~ msgstr ""
 
 #: src/lib/moderation/useLabelBehaviorDescription.ts:56
 msgid "Blur images"
@@ -2618,7 +2481,7 @@ msgstr ""
 msgid "Change Handle"
 msgstr ""
 
-#: src/screens/Login/LoginForm.tsx:677
+#: src/screens/Login/LoginForm.tsx:684
 msgid "Change hosting provider"
 msgstr "Change hosting provider"
 
@@ -2784,7 +2647,7 @@ msgstr ""
 msgid "Check my status"
 msgstr ""
 
-#: src/screens/Login/LoginForm.tsx:496
+#: src/screens/Login/LoginForm.tsx:503
 msgid "Check your email for a sign in code and enter it here."
 msgstr ""
 
@@ -3151,7 +3014,7 @@ msgid "Confirm"
 msgstr ""
 
 #: src/components/dialogs/EmailDialog/components/TokenField.tsx:37
-#: src/screens/Login/LoginForm.tsx:475
+#: src/screens/Login/LoginForm.tsx:482
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:187
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:191
 #: src/screens/Settings/components/DeleteAccountDialog.tsx:244
@@ -3164,12 +3027,12 @@ msgstr ""
 msgid "Connecting to service..."
 msgstr ""
 
-#: src/screens/Login/LoginForm.tsx:575
+#: src/screens/Login/LoginForm.tsx:582
 msgid "Connecting to service…"
 msgstr "Connecting to service…"
 
 #: src/screens/Login/ForgotPasswordForm.tsx:138
-#: src/screens/Login/LoginForm.tsx:581
+#: src/screens/Login/LoginForm.tsx:588
 msgid "Connecting…"
 msgstr "Connecting…"
 
@@ -3720,10 +3583,6 @@ msgid "Customization options"
 msgstr ""
 
 #: src/screens/Onboarding/Layout.tsx:60
-#~ msgid "Customizes your Bluesky experience"
-#~ msgstr ""
-
-#: src/screens/Onboarding/Layout.tsx:60
 msgid "Customizes your Ghostsky experience"
 msgstr "Customizes your Ghostsky experience"
 
@@ -4199,10 +4058,6 @@ msgstr ""
 msgid "Download"
 msgstr "Download"
 
-#: src/screens/StarterPack/StarterPackLandingScreen.tsx:329
-#~ msgid "Download Bluesky"
-#~ msgstr ""
-
 #: src/screens/Settings/components/ExportCarDialog.tsx:149
 msgid "Download chat data"
 msgstr ""
@@ -4248,10 +4103,6 @@ msgstr ""
 #: src/view/com/composer/text-input/TextInput.web.tsx:366
 msgid "Drop to add images"
 msgstr ""
-
-#: src/components/ageAssurance/useAgeAssuranceCopy.ts:20
-#~ msgid "Due to laws in your region, certain features on Bluesky are currently restricted until you're able to verify you're an adult."
-#~ msgstr ""
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:20
 msgid "Due to laws in your region, certain features on Ghostsky are currently restricted until you're able to verify you're an adult."
@@ -5344,21 +5195,12 @@ msgid "Find people you know"
 msgstr "Find people you know"
 
 #: src/screens/Search/Shell.tsx:791
-#~ msgid "Find posts, users, and feeds on Bluesky"
-#~ msgstr ""
-
-#: src/screens/Search/Shell.tsx:791
 msgid "Find posts, users, and feeds on Ghostsky"
 msgstr "Find posts, users, and feeds on Ghostsky"
 
 #: src/components/dialogs/nuxs/FindContactsAnnouncement.tsx:98
 msgid "Find your friends"
 msgstr ""
-
-#: src/screens/Onboarding/StepFindContactsIntro/index.tsx:46
-#: src/screens/Settings/FindContactsSettings.tsx:133
-#~ msgid "Find your friends on Bluesky by verifying your phone number and matching with your contacts. We protect your information and you control what happens next. <0>Learn more</0>"
-#~ msgstr ""
 
 #: src/screens/Onboarding/StepFindContactsIntro/index.tsx:46
 #: src/screens/Settings/FindContactsSettings.tsx:133
@@ -5619,15 +5461,10 @@ msgstr ""
 msgid "Forgot Password"
 msgstr ""
 
-#: src/screens/Login/LoginForm.tsx:454
 #: src/screens/Login/LoginForm.tsx:461
+#: src/screens/Login/LoginForm.tsx:468
 msgid "Forgot password?"
 msgstr ""
-
-#. This is alt text for a marketing image which transcribes English text that appears in the image
-#: src/components/dialogs/nuxs/GroupChatsAnnouncement.tsx:153
-#~ msgid "Four message bubbles representing a group chat. First message: \"Did you hear the news? Bluesky has group chats now!\" Second message: \"omg, no way\" Third message: \"Wow, 50 people in one chat!\" Fourth message: \"You can send invite links too!\""
-#~ msgstr "Four message bubbles representing a group chat. First message: \"Did you hear the news? Bluesky has group chats now!\" Second message: \"omg, no way\" Third message: \"Wow, 50 people in one chat!\" Fourth message: \"You can send invite links too!\""
 
 #. This is alt text for a marketing image which transcribes English text that appears in the image
 #: src/components/dialogs/nuxs/GroupChatsAnnouncement.tsx:153
@@ -6155,10 +5992,6 @@ msgid "Having trouble?"
 msgstr ""
 
 #: src/components/contacts/screens/PhoneInput.tsx:290
-#~ msgid "Held by Bluesky for 7 days to prevent abuse, then deleted"
-#~ msgstr ""
-
-#: src/components/contacts/screens/PhoneInput.tsx:290
 msgid "Held by Ghostsky for 7 days to prevent abuse, then deleted"
 msgstr "Held by Ghostsky for 7 days to prevent abuse, then deleted"
 
@@ -6235,7 +6068,7 @@ msgstr "Hide group chat updates"
 msgid "Hide lists"
 msgstr ""
 
-#: src/screens/Login/LoginForm.tsx:646
+#: src/screens/Login/LoginForm.tsx:653
 msgid "Hide password"
 msgstr "Hide password"
 
@@ -6364,20 +6197,16 @@ msgstr ""
 #: src/components/dialogs/ServerInput.tsx:138
 #: src/screens/Login/components/HostingProviderDialog.tsx:159
 #: src/screens/Login/ForgotPasswordForm.tsx:80
-#: src/screens/Login/LoginForm.tsx:692
+#: src/screens/Login/LoginForm.tsx:699
 msgid "Hosting provider"
 msgstr ""
 
 #. placeholder {0}: toNiceHostingUrl(state.pdsUrl)
-#: src/screens/Login/LoginForm.tsx:688
+#: src/screens/Login/LoginForm.tsx:695
 msgid "Hosting provider: {0}"
 msgstr "Hosting provider: {0}"
 
-#: src/screens/Login/LoginForm.tsx:657
-#~ msgid "Hosting provider: Bluesky"
-#~ msgstr "Hosting provider: Bluesky"
-
-#: src/screens/Login/LoginForm.tsx:690
+#: src/screens/Login/LoginForm.tsx:697
 msgid "Hosting provider: Ghostsky"
 msgstr "Hosting provider: Ghostsky"
 
@@ -6403,10 +6232,6 @@ msgid "Human trafficking"
 msgstr ""
 
 #: src/components/contacts/screens/GetContacts.tsx:267
-#~ msgid "I consent to Bluesky using my contacts for mutual friend discovery and to retain hashed data for matching until I opt out."
-#~ msgstr ""
-
-#: src/components/contacts/screens/GetContacts.tsx:267
 msgid "I consent to Ghostsky using my contacts for mutual friend discovery and to retain hashed data for matching until I opt out."
 msgstr "I consent to Ghostsky using my contacts for mutual friend discovery and to retain hashed data for matching until I opt out."
 
@@ -6423,10 +6248,6 @@ msgstr ""
 #: src/components/dms/BlockedByListDialog.tsx:55
 msgid "I understand"
 msgstr ""
-
-#: src/components/contacts/screens/ViewMatches.tsx:578
-#~ msgid "I'm on Bluesky as {0} - come find me! https://bsky.app/download"
-#~ msgstr ""
 
 #. placeholder {0}: currentAccount.handle
 #: src/components/contacts/screens/ViewMatches.tsx:578
@@ -6671,7 +6492,7 @@ msgstr ""
 msgid "Input new password"
 msgstr ""
 
-#: src/screens/Login/LoginForm.tsx:489
+#: src/screens/Login/LoginForm.tsx:496
 msgid "Input the code which has been emailed to you"
 msgstr ""
 
@@ -6742,10 +6563,6 @@ msgstr ""
 #: src/components/contacts/screens/ViewMatches.tsx:587
 msgid "Invite"
 msgstr ""
-
-#: src/components/contacts/screens/ViewMatches.tsx:567
-#~ msgid "Invite {name} to join Bluesky"
-#~ msgstr ""
 
 #: src/components/contacts/screens/ViewMatches.tsx:567
 msgid "Invite {name} to join Ghostsky"
@@ -6861,13 +6678,6 @@ msgstr ""
 #: src/components/intents/GroupChatJoinDialog.tsx:296
 msgid "Join"
 msgstr "Join"
-
-#: src/screens/StarterPack/StarterPackLandingScreen.tsx:210
-#: src/screens/StarterPack/StarterPackLandingScreen.tsx:215
-#: src/screens/StarterPack/StarterPackScreen.tsx:478
-#: src/screens/StarterPack/StarterPackScreen.tsx:488
-#~ msgid "Join Bluesky"
-#~ msgstr ""
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:210
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:215
@@ -7002,10 +6812,6 @@ msgid "Learn more about age assurance"
 msgstr ""
 
 #: src/view/com/auth/SplashScreen.web.tsx:167
-#~ msgid "Learn more about Bluesky"
-#~ msgstr ""
-
-#: src/view/com/auth/SplashScreen.web.tsx:167
 msgid "Learn more about Ghostsky"
 msgstr "Learn more about Ghostsky"
 
@@ -7045,20 +6851,9 @@ msgstr ""
 
 #: src/components/verification/VerificationsDialog.tsx:153
 #: src/components/verification/VerifierDialog.tsx:122
-#~ msgctxt "english-only-resource"
-#~ msgid "Learn more about verification on Bluesky"
-#~ msgstr ""
-
-#: src/components/verification/VerificationsDialog.tsx:153
-#: src/components/verification/VerifierDialog.tsx:122
 msgctxt "english-only-resource"
 msgid "Learn more about verification on Ghostsky"
 msgstr "Learn more about verification on Ghostsky"
-
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:128
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:131
-#~ msgid "Learn more about what is public on Bluesky."
-#~ msgstr ""
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:128
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:131
@@ -7123,11 +6918,6 @@ msgstr "Leave group chat"
 #: src/screens/Messages/ConversationSettings/index.tsx:590
 msgid "Leave this group chat"
 msgstr "Leave this group chat"
-
-#: src/components/dialogs/LinkWarning.tsx:83
-#: src/components/dialogs/LinkWarning.tsx:91
-#~ msgid "Leaving Bluesky"
-#~ msgstr ""
 
 #: src/components/dialogs/LinkWarning.tsx:83
 #: src/components/dialogs/LinkWarning.tsx:91
@@ -7951,7 +7741,7 @@ msgstr ""
 
 #: src/screens/Login/ForgotPasswordForm.tsx:144
 #: src/screens/Login/ForgotPasswordForm.tsx:169
-#: src/screens/Login/LoginForm.tsx:588
+#: src/screens/Login/LoginForm.tsx:595
 msgid "Navigates to the next screen"
 msgstr ""
 
@@ -8110,11 +7900,7 @@ msgstr ""
 msgid "New starter pack"
 msgstr ""
 
-#: src/screens/Login/LoginForm.tsx:569
-#~ msgid "New to Bluesky? <0>Sign up</0>"
-#~ msgstr "New to Bluesky? <0>Sign up</0>"
-
-#: src/screens/Login/LoginForm.tsx:602
+#: src/screens/Login/LoginForm.tsx:609
 msgid "New to Ghostsky? <0>Sign up</0>"
 msgstr "New to Ghostsky? <0>Sign up</0>"
 
@@ -8161,10 +7947,6 @@ msgstr ""
 #: src/features/inviteFriends/components/ThemePicker.tsx:33
 msgid "Night"
 msgstr "Night"
-
-#: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:32
-#~ msgid "No ads, no invasive tracking, no engagement traps. Bluesky respects your time and attention."
-#~ msgstr ""
 
 #: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:32
 msgid "No ads, no invasive tracking, no engagement traps. Ghostsky respects your time and attention."
@@ -8433,10 +8215,6 @@ msgstr ""
 #: src/view/com/profile/ProfileMenu.tsx:546
 msgid "Note about sharing"
 msgstr ""
-
-#: src/screens/Settings/PrivacyAndSecuritySettings.tsx:117
-#~ msgid "Note: Bluesky is an open and public network. This setting only limits the visibility of your content on the Bluesky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
-#~ msgstr ""
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:117
 msgid "Note: Ghostsky is an open and public network. This setting only limits the visibility of your content on the Ghostsky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
@@ -8788,7 +8566,7 @@ msgstr ""
 msgid "Opens a dialog to add a content warning to your post"
 msgstr ""
 
-#: src/screens/Login/LoginForm.tsx:678
+#: src/screens/Login/LoginForm.tsx:685
 msgid "Opens a dialog to change the hosting provider you sign in to"
 msgstr "Opens a dialog to change the hosting provider you sign in to"
 
@@ -8836,20 +8614,8 @@ msgstr "Opens device gallery to select up to {MAX_GALLERY_IMAGES, plural, other 
 #: src/screens/Messages/JoinRequest.tsx:305
 #: src/view/com/auth/SplashScreen.tsx:91
 #: src/view/com/auth/SplashScreen.web.tsx:110
-#~ msgid "Opens flow to create a new Bluesky account"
-#~ msgstr ""
-
-#: src/screens/Messages/JoinRequest.tsx:305
-#: src/view/com/auth/SplashScreen.tsx:91
-#: src/view/com/auth/SplashScreen.web.tsx:110
 msgid "Opens flow to create a new Ghostsky account"
 msgstr "Opens flow to create a new Ghostsky account"
-
-#: src/screens/Messages/JoinRequest.tsx:291
-#: src/view/com/auth/SplashScreen.tsx:118
-#: src/view/com/auth/SplashScreen.web.tsx:124
-#~ msgid "Opens flow to sign in to your existing Bluesky account"
-#~ msgstr ""
 
 #: src/screens/Messages/JoinRequest.tsx:291
 #: src/view/com/auth/SplashScreen.tsx:118
@@ -8987,10 +8753,6 @@ msgstr ""
 #: src/components/dms/AfterReportDialog.tsx:181
 msgid "Our moderation team has received your report."
 msgstr ""
-
-#: src/screens/Messages/components/ChatDisabled.tsx:54
-#~ msgid "Our moderators have reviewed reports and decided to disable your access to chats on Bluesky."
-#~ msgstr ""
 
 #: src/screens/Messages/components/ChatDisabled.tsx:54
 msgid "Our moderators have reviewed reports and decided to disable your access to chats on Ghostsky."
@@ -9244,10 +9006,6 @@ msgid "Please choose your password."
 msgstr ""
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:286
-#~ msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Bluesky."
-#~ msgstr ""
-
-#: src/components/dialogs/EmailDialog/screens/Update.tsx:286
 msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Ghostsky."
 msgstr "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Ghostsky."
 
@@ -9370,10 +9128,6 @@ msgid "Please sign in as @{0}"
 msgstr ""
 
 #: src/features/inviteFriends/InviteScannerScreen.web.tsx:40
-#~ msgid "Please use the Bluesky mobile app to scan a QR code."
-#~ msgstr "Please use the Bluesky mobile app to scan a QR code."
-
-#: src/features/inviteFriends/InviteScannerScreen.web.tsx:40
 msgid "Please use the Ghostsky mobile app to scan a QR code."
 msgstr "Please use the Ghostsky mobile app to scan a QR code."
 
@@ -9477,10 +9231,6 @@ msgstr ""
 #: src/screens/ModerationInteractionSettings/index.tsx:35
 msgid "Post Interaction Settings"
 msgstr ""
-
-#: src/components/dialogs/nuxs/GroupChatsAnnouncement.tsx:193
-#~ msgid "Post it to Bluesky or share anywhere."
-#~ msgstr "Post it to Bluesky or share anywhere."
 
 #: src/components/dialogs/nuxs/GroupChatsAnnouncement.tsx:193
 msgid "Post it to Ghostsky or share anywhere."
@@ -9813,20 +9563,6 @@ msgstr ""
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:113
 msgid "Read our blog post"
 msgstr ""
-
-#: src/view/com/auth/SplashScreen.web.tsx:172
-#~ msgid "Read the Bluesky blog"
-#~ msgstr ""
-
-#: src/screens/Signup/StepInfo/Policies.tsx:53
-#: src/screens/Signup/StepInfo/Policies.tsx:79
-#~ msgid "Read the Bluesky Privacy Policy"
-#~ msgstr ""
-
-#: src/screens/Signup/StepInfo/Policies.tsx:46
-#: src/screens/Signup/StepInfo/Policies.tsx:66
-#~ msgid "Read the Bluesky Terms of Service"
-#~ msgstr ""
 
 #: src/view/com/auth/SplashScreen.web.tsx:172
 msgid "Read the Ghostsky blog"
@@ -10486,7 +10222,7 @@ msgstr ""
 msgid "Reset password"
 msgstr ""
 
-#: src/screens/Login/LoginForm.tsx:455
+#: src/screens/Login/LoginForm.tsx:462
 msgid "Reset your password by sending a code to your email"
 msgstr "Reset your password by sending a code to your email"
 
@@ -10495,7 +10231,7 @@ msgstr "Reset your password by sending a code to your email"
 msgid "Resync contacts"
 msgstr ""
 
-#: src/screens/Login/LoginForm.tsx:565
+#: src/screens/Login/LoginForm.tsx:572
 msgid "Retries signing in"
 msgstr ""
 
@@ -10514,8 +10250,8 @@ msgstr ""
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoFallback.tsx:56
 #: src/components/Post/Embed/VideoEmbed/VideoEmbedInner/VideoFallback.tsx:59
 #: src/components/StarterPack/ProfileStarterPacks.tsx:377
-#: src/screens/Login/LoginForm.tsx:564
-#: src/screens/Login/LoginForm.tsx:570
+#: src/screens/Login/LoginForm.tsx:571
+#: src/screens/Login/LoginForm.tsx:577
 #: src/screens/Messages/ChatList.tsx:427
 #: src/screens/Messages/components/MessageListError.tsx:24
 #: src/screens/Messages/Inbox.tsx:211
@@ -10559,7 +10295,7 @@ msgstr ""
 msgid "Returns to the previous step"
 msgstr ""
 
-#: src/screens/Login/LoginForm.tsx:646
+#: src/screens/Login/LoginForm.tsx:653
 msgid "Reveal password"
 msgstr "Reveal password"
 
@@ -10857,10 +10593,6 @@ msgstr ""
 #: src/components/RichTextTag.tsx:142
 msgid "See #{tag} posts by user"
 msgstr ""
-
-#: src/view/com/auth/SplashScreen.web.tsx:177
-#~ msgid "See jobs at Bluesky"
-#~ msgstr ""
 
 #: src/view/com/auth/SplashScreen.web.tsx:177
 msgid "See jobs at Ghostsky"
@@ -11172,7 +10904,7 @@ msgstr ""
 msgid "set your hosting provider manually"
 msgstr "set your hosting provider manually"
 
-#: src/screens/Login/LoginForm.tsx:519
+#: src/screens/Login/LoginForm.tsx:526
 msgid "Set your hosting provider manually"
 msgstr "Set your hosting provider manually"
 
@@ -11333,10 +11065,6 @@ msgstr "Share this search"
 #: src/screens/StarterPack/StarterPackScreen.tsx:440
 msgid "Share this starter pack"
 msgstr ""
-
-#: src/components/StarterPack/ShareDialog.tsx:86
-#~ msgid "Share this starter pack and help people join your community on Bluesky."
-#~ msgstr ""
 
 #: src/components/StarterPack/ShareDialog.tsx:86
 msgid "Share this starter pack and help people join your community on Ghostsky."
@@ -11506,8 +11234,8 @@ msgstr ""
 #: src/screens/Login/index.tsx:143
 #: src/screens/Login/index.tsx:165
 #: src/screens/Login/LoginForm.tsx:275
-#: src/screens/Login/LoginForm.tsx:587
-#: src/screens/Login/LoginForm.tsx:593
+#: src/screens/Login/LoginForm.tsx:594
+#: src/screens/Login/LoginForm.tsx:600
 #: src/screens/Messages/JoinRequest.tsx:290
 #: src/screens/Messages/JoinRequest.tsx:296
 #: src/screens/Search/SearchResults.tsx:433
@@ -11551,10 +11279,6 @@ msgid "Sign in to account that is not listed"
 msgstr ""
 
 #: src/components/dialogs/Signin.tsx:47
-#~ msgid "Sign in to Bluesky or create a new account"
-#~ msgstr ""
-
-#: src/components/dialogs/Signin.tsx:47
 msgid "Sign in to Ghostsky or create a new account"
 msgstr "Sign in to Ghostsky or create a new account"
 
@@ -11588,7 +11312,7 @@ msgstr ""
 msgid "Sign out?"
 msgstr ""
 
-#: src/screens/Login/LoginForm.tsx:605
+#: src/screens/Login/LoginForm.tsx:612
 msgid "Sign up"
 msgstr "Sign up"
 
@@ -11904,10 +11628,6 @@ msgid "Storybook"
 msgstr ""
 
 #: src/components/dialogs/nuxs/LiveNowBetaDialog.tsx:182
-#~ msgid "Streaming on Twitch? Set your live status on Bluesky to add a badge to your avatar. Tapping it takes people straight to your stream."
-#~ msgstr ""
-
-#: src/components/dialogs/nuxs/LiveNowBetaDialog.tsx:182
 msgid "Streaming on Twitch? Set your live status on Ghostsky to add a badge to your avatar. Tapping it takes people straight to your stream."
 msgstr "Streaming on Twitch? Set your live status on Ghostsky to add a badge to your avatar. Tapping it takes people straight to your stream."
 
@@ -12085,10 +11805,6 @@ msgid "Take the conversation private."
 msgstr "Take the conversation private."
 
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:110
-#~ msgid "Tap below to allow Bluesky to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
-#~ msgstr ""
-
-#: src/components/dialogs/DeviceLocationRequestDialog.tsx:110
 msgid "Tap below to allow Ghostsky to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
 msgstr "Tap below to allow Ghostsky to access your GPS location. We will then use that data to more accurately determine the content and features available in your region."
 
@@ -12108,10 +11824,6 @@ msgstr ""
 #: src/screens/Signup/StepInfo/index.tsx:326
 msgid "Tap here to update your location with GPS."
 msgstr "Tap here to update your location with GPS."
-
-#: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:165
-#~ msgid "Tap to acknowledge that you understand and agree to these updates and continue using Bluesky"
-#~ msgstr ""
 
 #: src/components/PolicyUpdateOverlay/updates/202508/index.tsx:165
 msgid "Tap to acknowledge that you understand and agree to these updates and continue using Ghostsky"
@@ -12288,10 +12000,6 @@ msgstr ""
 msgid "The birthdate you've entered means you are under 18 years old. Certain content and features may be unavailable to you."
 msgstr ""
 
-#: src/screens/Moderation/index.tsx:415
-#~ msgid "The Bluesky web application"
-#~ msgstr ""
-
 #: src/view/screens/CommunityGuidelines.tsx:34
 msgid "The Community Guidelines have been moved to <0/>"
 msgstr ""
@@ -12307,10 +12015,6 @@ msgstr ""
 #: src/state/shell/progress-guide.tsx:227
 msgid "The Discover feed now knows what you like"
 msgstr ""
-
-#: src/screens/StarterPack/StarterPackLandingScreen.tsx:332
-#~ msgid "The experience is better in the app. Download Bluesky now and we'll pick back up where you left off."
-#~ msgstr ""
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:332
 msgid "The experience is better in the app. Download Ghostsky now and we'll pick back up where you left off."
@@ -12353,10 +12057,6 @@ msgstr "The member limit has been reached."
 msgid "The post you’re replying to was marked as being written in {suggestedLanguageName} by its author. Would you like to reply in <0>{suggestedLanguageName}</0>?"
 msgstr "The post you’re replying to was marked as being written in {suggestedLanguageName} by its author. Would you like to reply in <0>{suggestedLanguageName}</0>?"
 
-#: src/view/screens/PrivacyPolicy.tsx:29
-#~ msgid "The Privacy Policy has been moved to <0/>"
-#~ msgstr ""
-
 #: src/view/com/composer/state/video.ts:429
 #: src/view/com/composer/state/video.ts:468
 msgid "The selected video is larger than {VIDEO_MAX_SIZE_MB} MB. Please try again with a smaller file."
@@ -12378,10 +12078,6 @@ msgstr ""
 #: src/view/screens/Support.tsx:31
 msgid "The support form has been moved. If you need help, please <0/> or visit {HELP_DESK_URL} to get in touch with us."
 msgstr ""
-
-#: src/view/screens/TermsOfService.tsx:29
-#~ msgid "The Terms of Service have been moved to"
-#~ msgstr ""
 
 #: src/components/intents/VerifyEmailIntentDialog.tsx:89
 msgid "The verification code you have provided is invalid. Please make sure that you have used the correct verification link or request a new one."
@@ -12513,10 +12209,6 @@ msgid "There was an unexpected issue in the application. Please let us know if t
 msgstr ""
 
 #: src/screens/SignupQueued.tsx:133
-#~ msgid "There's been a rush of new users to Bluesky! We'll activate your account as soon as we can."
-#~ msgstr ""
-
-#: src/screens/SignupQueued.tsx:133
 msgid "There's been a rush of new users to Ghostsky! We'll activate your account as soon as we can."
 msgstr "There's been a rush of new users to Ghostsky! We'll activate your account as soon as we can."
 
@@ -12585,11 +12277,6 @@ msgstr ""
 
 #: src/features/liveNow/components/GoLiveDisabledDialog.tsx:114
 #: src/screens/Messages/components/ChatDisabled.tsx:138
-#~ msgid "This appeal will be sent to Bluesky's moderation service."
-#~ msgstr ""
-
-#: src/features/liveNow/components/GoLiveDisabledDialog.tsx:114
-#: src/screens/Messages/components/ChatDisabled.tsx:138
 msgid "This appeal will be sent to Ghostsky's moderation service."
 msgstr "This appeal will be sent to Ghostsky's moderation service."
 
@@ -12597,10 +12284,6 @@ msgstr "This appeal will be sent to Ghostsky's moderation service."
 #: src/screens/PostThread/components/ThreadItemPostNoUnauthenticated.tsx:47
 msgid "This author has chosen to make their posts visible only to people who are signed in."
 msgstr ""
-
-#: src/screens/Profile/components/GermButton.tsx:244
-#~ msgid "This button lets others open the Germ DM app to send you a message. You can manage its visibility from the Germ DM app, or you can disconnect your Bluesky account from Germ DM altogether by clicking the button below."
-#~ msgstr ""
 
 #: src/screens/Profile/components/GermButton.tsx:244
 msgid "This button lets others open the Germ DM app to send you a message. You can manage its visibility from the Germ DM app, or you can disconnect your Ghostsky account from Germ DM altogether by clicking the button below."
@@ -12654,10 +12337,6 @@ msgstr ""
 #: src/lib/moderation/useModerationCauseDescription.ts:85
 msgid "This content is not available because one of the users involved has blocked the other."
 msgstr ""
-
-#: src/view/com/posts/PostFeedErrorMessage.tsx:122
-#~ msgid "This content is not viewable without a Bluesky account."
-#~ msgstr ""
 
 #: src/view/com/posts/PostFeedErrorMessage.tsx:124
 msgid "This content is not viewable without a Ghostsky account."
@@ -12771,18 +12450,10 @@ msgstr ""
 msgid "This link is taking you to the following website:"
 msgstr ""
 
-#: src/screens/List/ListHiddenScreen.tsx:155
-#~ msgid "This list – created by <0>{0}</0> – contains possible violations of Bluesky's community guidelines in its name or description."
-#~ msgstr ""
-
 #. placeholder {0}: sanitizeHandle(list.creator.handle, '@')
 #: src/screens/List/ListHiddenScreen.tsx:155
 msgid "This list – created by <0>{0}</0> – contains possible violations of Ghostsky's community guidelines in its name or description."
 msgstr "This list – created by <0>{0}</0> – contains possible violations of Ghostsky's community guidelines in its name or description."
-
-#: src/screens/List/ListHiddenScreen.tsx:150
-#~ msgid "This list – created by you – contains possible violations of Bluesky's community guidelines in its name or description."
-#~ msgstr ""
 
 #: src/screens/List/ListHiddenScreen.tsx:150
 msgid "This list – created by you – contains possible violations of Ghostsky's community guidelines in its name or description."
@@ -12817,10 +12488,6 @@ msgstr "This moderation was applied to the entire user account and will appear o
 #: src/components/dms/MessagesListBlockedFooter.tsx:84
 msgid "This person is blocking you"
 msgstr "This person is blocking you"
-
-#: src/screens/PostThread/components/ThreadItemAnchor.tsx:644
-#~ msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Bluesky on <1>{1}</1>."
-#~ msgstr ""
 
 #. placeholder {0}: niceDate(i18n, createdAt)
 #. placeholder {1}: niceDate(i18n, indexedAt)
@@ -12936,10 +12603,6 @@ msgstr ""
 #: src/components/dialogs/MutedWords.tsx:454
 msgid "This will delete \"{0}\" from your muted words. You can always add it back later."
 msgstr ""
-
-#: src/screens/Settings/components/DeleteAccountDialog.tsx:330
-#~ msgid "This will irreversibly delete your Bluesky account <0>{currentHandle}</0> and all associated data. Note that this will affect any other <1>AT Protocol</1> services you use with this account."
-#~ msgstr ""
 
 #: src/screens/Settings/components/DeleteAccountDialog.tsx:330
 msgid "This will irreversibly delete your Ghostsky account <0>{currentHandle}</0> and all associated data. Note that this will affect any other <1>AT Protocol</1> services you use with this account."
@@ -13154,10 +12817,6 @@ msgid "Type:"
 msgstr ""
 
 #: src/components/dialogs/DeviceLocationRequestDialog.tsx:86
-#~ msgid "Unable to access location. You'll need to visit your system settings to enable location services for Bluesky."
-#~ msgstr ""
-
-#: src/components/dialogs/DeviceLocationRequestDialog.tsx:86
 msgid "Unable to access location. You'll need to visit your system settings to enable location services for Ghostsky."
 msgstr "Unable to access location. You'll need to visit your system settings to enable location services for Ghostsky."
 
@@ -13304,16 +12963,8 @@ msgid "Unfortunately, none of your subscribed labelers supports this report type
 msgstr ""
 
 #: src/ageAssurance/components/NoAccessScreen.tsx:263
-#~ msgid "Unfortunately, the birthdate you have saved to your profile makes you too young to access Bluesky."
-#~ msgstr ""
-
-#: src/ageAssurance/components/NoAccessScreen.tsx:263
 msgid "Unfortunately, the birthdate you have saved to your profile makes you too young to access Ghostsky."
 msgstr "Unfortunately, the birthdate you have saved to your profile makes you too young to access Ghostsky."
-
-#: src/ageAssurance/components/NoAccessScreen.tsx:247
-#~ msgid "Unfortunately, your declared age indicates that you are not old enough to access Bluesky in your region."
-#~ msgstr ""
 
 #: src/ageAssurance/components/NoAccessScreen.tsx:247
 msgid "Unfortunately, your declared age indicates that you are not old enough to access Ghostsky in your region."
@@ -13573,10 +13224,6 @@ msgid "Uploading video..."
 msgstr ""
 
 #: src/screens/Settings/AppPasswords.tsx:67
-#~ msgid "Use app passwords to sign in to other Bluesky clients without giving full access to your account or password."
-#~ msgstr ""
-
-#: src/screens/Settings/AppPasswords.tsx:67
 msgid "Use app passwords to sign in to other Ghostsky clients without giving full access to your account or password."
 msgstr "Use app passwords to sign in to other Ghostsky clients without giving full access to your account or password."
 
@@ -13606,10 +13253,6 @@ msgstr ""
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:190
 msgid "Use this to sign in to the other app along with your handle."
 msgstr ""
-
-#: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:278
-#~ msgid "Use your account email address, or another real email address you control, in case KWS or Bluesky needs to contact you."
-#~ msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:278
 msgid "Use your account email address, or another real email address you control, in case KWS or Ghostsky needs to contact you."
@@ -13721,10 +13364,6 @@ msgstr ""
 #: src/screens/Moderation/VerificationSettings.tsx:34
 msgid "Verification Settings"
 msgstr ""
-
-#: src/screens/Moderation/VerificationSettings.tsx:43
-#~ msgid "Verifications on Bluesky work differently than on other platforms. <0>Learn more here.</0>"
-#~ msgstr ""
 
 #: src/screens/Moderation/VerificationSettings.tsx:43
 msgid "Verifications on Ghostsky work differently than on other platforms. <0>Learn more here.</0>"
@@ -14131,7 +13770,7 @@ msgstr "We couldn’t load this conversation’s join requests"
 msgid "We couldn’t load this conversation’s settings"
 msgstr "We couldn’t load this conversation’s settings"
 
-#: src/screens/Login/LoginForm.tsx:515
+#: src/screens/Login/LoginForm.tsx:522
 msgid "We couldn’t verify your hosting provider. Check your internet connection, or <0>set your hosting provider manually</0>."
 msgstr "We couldn’t verify your hosting provider. Check your internet connection, or <0>set your hosting provider manually</0>."
 
@@ -14146,10 +13785,6 @@ msgstr ""
 #: src/screens/SignupQueued.tsx:163
 msgid "We estimate {estimatedTime} until your account is ready."
 msgstr ""
-
-#: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:197
-#~ msgid "We have partnered with <0>KWS</0> to handle age verification. When you click \"Begin\" below, KWS will email you instructions to complete the verification process. If your email address has already been used to verify your age for another game or service that uses KWS, you won’t need to do it again. When you’re done, you'll be brought back to continue using Bluesky."
-#~ msgstr ""
 
 #: src/components/ageAssurance/AgeAssuranceInitDialog.tsx:197
 msgid "We have partnered with <0>KWS</0> to handle age verification. When you click \"Begin\" below, KWS will email you instructions to complete the verification process. If your email address has already been used to verify your age for another game or service that uses KWS, you won’t need to do it again. When you’re done, you'll be brought back to continue using Ghostsky."
@@ -14251,20 +13886,12 @@ msgid "We’re having network issues, try again"
 msgstr "We’re having network issues, try again"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:97
-#~ msgid "We’re introducing a new layer of verification on Bluesky — an easy-to-see checkmark."
-#~ msgstr ""
-
-#: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:97
 msgid "We’re introducing a new layer of verification on Ghostsky — an easy-to-see checkmark."
 msgstr "We’re introducing a new layer of verification on Ghostsky — an easy-to-see checkmark."
 
 #: src/screens/Signup/index.tsx:142
 msgid "We’re so excited to have you join us!"
 msgstr "We’re so excited to have you join us!"
-
-#: src/ageAssurance/useVerificationFlow.ts:117
-#~ msgid "We're sorry, but based on the data shared by your device, you are not old enough to access Bluesky."
-#~ msgstr "We're sorry, but based on the data shared by your device, you are not old enough to access Bluesky."
 
 #: src/ageAssurance/useVerificationFlow.ts:117
 msgid "We're sorry, but based on the data shared by your device, you are not old enough to access Ghostsky."
@@ -14510,10 +14137,6 @@ msgid "You are a trusted verifier"
 msgstr ""
 
 #: src/ageAssurance/components/NoAccessScreen.tsx:174
-#~ msgid "You are accessing Bluesky from a region that legally requires us to verify your age before allowing you to access the app."
-#~ msgstr ""
-
-#: src/ageAssurance/components/NoAccessScreen.tsx:174
 msgid "You are accessing Ghostsky from a region that legally requires us to verify your age before allowing you to access the app."
 msgstr "You are accessing Ghostsky from a region that legally requires us to verify your age before allowing you to access the app."
 
@@ -14537,11 +14160,6 @@ msgstr ""
 #: src/features/liveNow/components/GoLiveDisabledDialog.tsx:108
 msgid "You are currently blocked from using the Go Live feature. To appeal this moderation decision, please submit the form below."
 msgstr ""
-
-#: src/ageAssurance/components/NoAccessScreen.tsx:400
-#: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:124
-#~ msgid "You are currently unable to access Bluesky's Age Assurance flow. Please <0>contact our moderation team</0> if you believe this is an error."
-#~ msgstr ""
 
 #: src/ageAssurance/components/NoAccessScreen.tsx:400
 #: src/components/ageAssurance/AgeAssuranceAccountCard.tsx:124
@@ -14590,10 +14208,6 @@ msgid "You can adjust your interests at any time from \"Content and media\" sett
 msgstr ""
 
 #: src/screens/Settings/components/DeleteAccountDialog.tsx:211
-#~ msgid "You can also <0>temporarily deactivate</0> your account instead. Your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account at any time by logging in."
-#~ msgstr ""
-
-#: src/screens/Settings/components/DeleteAccountDialog.tsx:211
 msgid "You can also <0>temporarily deactivate</0> your account instead. Your profile, posts, feeds, and lists will no longer be visible to other Ghostsky users. You can reactivate your account at any time by logging in."
 msgstr "You can also <0>temporarily deactivate</0> your account instead. Your profile, posts, feeds, and lists will no longer be visible to other Ghostsky users. You can reactivate your account at any time by logging in."
 
@@ -14622,10 +14236,6 @@ msgstr ""
 #: src/components/dialogs/nuxs/ActivitySubscriptions.tsx:150
 msgid "You can now choose to be notified when specific people post. If there’s someone you want timely updates from, go to their profile and find the new bell icon near the follow button."
 msgstr ""
-
-#: src/components/dialogs/nuxs/InviteFriendsAnnouncement.tsx:154
-#~ msgid "You can now invite friends with a link or QR code. Share the link anywhere, or let them scan the code to join you on Bluesky."
-#~ msgstr "You can now invite friends with a link or QR code. Share the link anywhere, or let them scan the code to join you on Bluesky."
 
 #: src/components/dialogs/nuxs/InviteFriendsAnnouncement.tsx:154
 msgid "You can now invite friends with a link or QR code. Share the link anywhere, or let them scan the code to join you on Ghostsky."
@@ -14721,10 +14331,6 @@ msgstr "You have been previously removed from this group and can’t join it usi
 #: src/lib/moderation/useModerationCauseDescription.ts:66
 msgid "You have blocked this user. You cannot view their content."
 msgstr ""
-
-#: src/components/ageAssurance/useAgeAssuranceCopy.ts:17
-#~ msgid "You have completed the Age Assurance process, but based on the results, we cannot be sure that you are 18 years of age or older. Due to laws in your region, certain features on Bluesky must remain restricted until you're able to verify you're an adult."
-#~ msgstr ""
 
 #: src/components/ageAssurance/useAgeAssuranceCopy.ts:17
 msgid "You have completed the Age Assurance process, but based on the results, we cannot be sure that you are 18 years of age or older. Due to laws in your region, certain features on Ghostsky must remain restricted until you're able to verify you're an adult."
@@ -14825,14 +14431,6 @@ msgid "You initiated this flow already, {0} ago. It may take up to 5 minutes for
 msgstr ""
 
 #: src/components/NewskieDialog.tsx:107
-#~ msgid "You joined Bluesky {timeAgoString} ago"
-#~ msgstr ""
-
-#: src/components/NewskieDialog.tsx:104
-#~ msgid "You joined Bluesky using a starter pack {timeAgoString} ago"
-#~ msgstr ""
-
-#: src/components/NewskieDialog.tsx:107
 msgid "You joined Ghostsky {timeAgoString} ago"
 msgstr "You joined Ghostsky {timeAgoString} ago"
 
@@ -14859,10 +14457,6 @@ msgstr ""
 #: src/components/moderation/BlockDialog.tsx:321
 msgid "You must be a chat owner to remove a member."
 msgstr "You must be a chat owner to remove a member."
-
-#: src/components/dialogs/BirthDateSettings.tsx:177
-#~ msgid "You must be at least 13 years old to use Bluesky. Read our <0>Terms of Service</0> for more information."
-#~ msgstr ""
 
 #: src/components/dialogs/BirthDateSettings.tsx:177
 msgid "You must be at least 13 years old to use Ghostsky. Read our <0>Terms of Service</0> for more information."
@@ -14977,10 +14571,6 @@ msgstr ""
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:241
 msgid "You'll follow these people right away"
 msgstr ""
-
-#: src/components/contacts/screens/GetContacts.tsx:314
-#~ msgid "You'll need to go to the System Settings for Bluesky and give permission if you want to use this feature."
-#~ msgstr ""
 
 #: src/components/contacts/screens/GetContacts.tsx:314
 msgid "You'll need to go to the System Settings for Ghostsky and give permission if you want to use this feature."
@@ -15098,10 +14688,6 @@ msgid "Your account repository, containing all public data records, can be downl
 msgstr ""
 
 #: src/screens/Takendown.tsx:210
-#~ msgid "Your account was found to be in violation of the <0>Bluesky Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
-#~ msgstr ""
-
-#: src/screens/Takendown.tsx:210
 msgid "Your account was found to be in violation of the <0>Ghostsky Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
 msgstr "Your account was found to be in violation of the <0>Ghostsky Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
 
@@ -15122,16 +14708,8 @@ msgid "Your choice will be remembered for future links. You can change it at any
 msgstr ""
 
 #: src/view/com/notifications/NotificationFeedItem.tsx:374
-#~ msgid "Your contact {firstAuthorLink} is on Bluesky"
-#~ msgstr ""
-
-#: src/view/com/notifications/NotificationFeedItem.tsx:374
 msgid "Your contact {firstAuthorLink} is on Ghostsky"
 msgstr "Your contact {firstAuthorLink} is on Ghostsky"
-
-#: src/view/com/notifications/NotificationFeedItem.tsx:372
-#~ msgid "Your contact {firstAuthorName} is on Bluesky"
-#~ msgstr ""
 
 #: src/view/com/notifications/NotificationFeedItem.tsx:372
 msgid "Your contact {firstAuthorName} is on Ghostsky"
@@ -15164,10 +14742,6 @@ msgid "Your email appears to be invalid."
 msgstr ""
 
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:62
-#~ msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Bluesky."
-#~ msgstr ""
-
-#: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:62
 msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Ghostsky."
 msgstr "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Ghostsky."
 
@@ -15187,10 +14761,6 @@ msgstr ""
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:247
 msgid "Your full handle will be <0>@{0}</0>"
 msgstr ""
-
-#: src/screens/Login/components/HostingProviderDialog.tsx:182
-#~ msgid "Your hosting provider can’t be detected from an email address, so the default Bluesky service will be used. Enter your username instead, or set your provider manually."
-#~ msgstr "Your hosting provider can’t be detected from an email address, so the default Bluesky service will be used. Enter your username instead, or set your provider manually."
 
 #: src/screens/Login/components/HostingProviderDialog.tsx:182
 msgid "Your hosting provider can’t be detected from an email address, so the default Ghostsky service will be used. Enter your username instead, or set your provider manually."
@@ -15230,10 +14800,6 @@ msgid "Your name, avatar, the name of the group chat, and the number of members 
 msgstr "Your name, avatar, the name of the group chat, and the number of members will be visible to everyone."
 
 #: src/screens/Settings/components/ChangePasswordDialog.tsx:72
-#~ msgid "Your password has been changed successfully! Please use your new password when you sign in to Bluesky from now on."
-#~ msgstr ""
-
-#: src/screens/Settings/components/ChangePasswordDialog.tsx:72
 msgid "Your password has been changed successfully! Please use your new password when you sign in to Ghostsky from now on."
 msgstr "Your password has been changed successfully! Please use your new password when you sign in to Ghostsky from now on."
 
@@ -15261,10 +14827,6 @@ msgstr ""
 #: src/screens/Onboarding/StepFinished/ValuePropositionPager.shared.tsx:26
 msgid "Your profile picture surrounded by concentric circles of other users' profile pictures"
 msgstr ""
-
-#: src/screens/Settings/components/DeactivateAccountDialog.tsx:75
-#~ msgid "Your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account at any time by logging in."
-#~ msgstr ""
 
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:75
 msgid "Your profile, posts, feeds, and lists will no longer be visible to other Ghostsky users. You can reactivate your account at any time by logging in."
