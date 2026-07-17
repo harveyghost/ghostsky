@@ -60,8 +60,20 @@ function esc(str) {
   )
 }
 
-function ogPage({title, description, image, url, type, publishedTime}) {
+function ogPage({title, description, images, url, type, publishedTime}) {
   const oembedUrl = `https://ghostsky.app/oembed?url=${encodeURIComponent(url)}&format=json`
+  // Normalize: accept either a single string or an array; drop empties.
+  const imageList = (Array.isArray(images) ? images : [images]).filter(Boolean)
+  const hasImage = imageList.length > 0
+  // Discord renders multiple same-URL embeds as a gallery when a page exposes
+  // multiple og:image tags. Emit one per image.
+  const ogImageTags = imageList
+    .map(img => `<meta property="og:image" content="${esc(img)}">`)
+    .join('\n')
+  // twitter:image only takes one; use the first.
+  const twitterImageTag = hasImage
+    ? `<meta name="twitter:image" content="${esc(imageList[0])}">`
+    : ''
   return `<!DOCTYPE html>
 <html>
 <head>
@@ -73,15 +85,15 @@ function ogPage({title, description, image, url, type, publishedTime}) {
 <meta name="theme-color" content="#8B7FD6">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
-${image ? `<meta property="og:image" content="${esc(image)}">` : ''}
+${ogImageTags}
 <meta property="og:type" content="${type}">
 <meta property="og:url" content="${esc(url)}">
 <meta property="og:site_name" content="Ghostsky">
 ${publishedTime ? `<meta property="article:published_time" content="${esc(publishedTime)}">` : ''}
-<meta name="twitter:card" content="${image ? 'summary_large_image' : 'summary'}">
+<meta name="twitter:card" content="${hasImage ? 'summary_large_image' : 'summary'}">
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(description)}">
-${image ? `<meta name="twitter:image" content="${esc(image)}">` : ''}
+${twitterImageTag}
 </head>
 <body>
 <p><a href="${esc(url)}">${esc(title)}</a>: ${esc(description)}</p>
@@ -128,15 +140,25 @@ async function handlePost(handle, rkey, requestUrl) {
 
   const text = (post.record && post.record.text) || ''
   const authorName = profile.displayName || profile.handle
-  const image =
-    (post.embed && post.embed.images && post.embed.images[0] && post.embed.images[0].fullsize) ||
-    (post.embed && post.embed.media && post.embed.media.images && post.embed.media.images[0] && post.embed.media.images[0].fullsize) ||
-    ''
+  // Collect every image from the post embed. Two shapes carry images:
+  //   app.bsky.embed.images#view          -> embed.images[]
+  //   app.bsky.embed.recordWithMedia#view -> embed.media.images[]
+  let imageArr = []
+  if (post.embed) {
+    if (Array.isArray(post.embed.images)) {
+      imageArr = post.embed.images
+    } else if (post.embed.media && Array.isArray(post.embed.media.images)) {
+      imageArr = post.embed.media.images
+    }
+  }
+  const images = imageArr
+    .map(img => img && img.fullsize)
+    .filter(Boolean)
 
   return ogPage({
     title: `${authorName} (@${profile.handle})`,
     description: text.slice(0, 300),
-    image,
+    images,
     url: requestUrl,
     type: 'link',
     publishedTime: (post.record && post.record.createdAt) || '',
@@ -154,7 +176,7 @@ async function handleProfile(handle, requestUrl) {
   return ogPage({
     title: `${profile.displayName || profile.handle} (@${profile.handle})`,
     description: profile.description || '',
-    image: profile.avatar || '',
+    images: profile.avatar ? [profile.avatar] : [],
     url: requestUrl,
     type: 'profile',
   })

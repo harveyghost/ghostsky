@@ -134,6 +134,10 @@ export function DesktopRightNav({routeName}: {routeName: string}) {
         </InlineLinkText>
       </Text>
 
+      <Text style={[a.leading_snug, a.text_sm, t.atoms.text_contrast_low]}>
+        @dev.ghostsky.app
+      </Text>
+
       {kawaii && (
         <Text style={[t.atoms.text_contrast_medium, {marginTop: 12}]}>
           <Trans>
