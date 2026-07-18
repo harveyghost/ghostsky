@@ -7242,11 +7242,11 @@ msgstr ""
 msgid "Logged-out visibility"
 msgstr ""
 
-#: src/view/shell/desktop/RightNav.tsx:142
+#: src/view/shell/desktop/RightNav.tsx:146
 msgid "Logo by @sawaratsuki.bsky.social"
 msgstr ""
 
-#: src/view/shell/desktop/RightNav.tsx:139
+#: src/view/shell/desktop/RightNav.tsx:143
 #: src/view/shell/Drawer.tsx:768
 msgid "Logo by <0>@sawaratsuki.bsky.social</0>"
 msgstr ""
